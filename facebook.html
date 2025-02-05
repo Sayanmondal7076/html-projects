@@ -1,0 +1,155 @@
+<html>
+<head>
+    <title>Facebook Login Page</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: rgba(60, 89, 155, 1); 
+            color: aliceblue;
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 0 20px;
+        }
+
+        .left {
+            font-size: 2.5rem;
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .right form {
+            display: flex;
+            align-items: center;
+        }
+
+        .right input {
+            padding: 10px;
+            font-size: 1rem;
+            margin-left: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .right input[type="email"],
+        .right input[type="password"] {
+            width: 250px;
+        }
+
+        .right input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            width: 100px;
+        }
+
+        .right input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        
+        main {
+            display: flex;
+            justify-content: flex-end; 
+            padding: 20px;
+        }
+
+        
+        .rightsection {
+            display: flex;
+            flex-direction: column; 
+            gap: 10px;
+            padding: 40px;
+            align-items: flex-start;
+        }
+
+        .rightsection form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .rightsection input {
+            padding: 10px;
+            font-size: 1rem;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .rightsection input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            width: 100px;
+        }
+
+        .rightsection input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .leftsection img{
+            width:70%;
+            margin:0px;
+           
+
+            
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="left">facebook</div>
+        <div class="right">
+            <form action="#" method="POST">
+                <input name="email" placeholder="Email" required type="email">
+                <input type="password" placeholder="Password" required type="password">
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </nav>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+              <img src=""C:\Users\sayan\Desktop\Picsart_25-02-03_21-47-43-632.png""> 
+            </div>
+            </section>
+            <div class="rightsection">
+                <form>
+                   <p >Firstname:</p> <input name="firstname" placeholder="First Name" required type="text">
+                    <P>Lastname:</P> <input name="lastname" placeholder="Last Name" required type="text">
+                   <p>Email id:</p> <input name="email" placeholder="Your Email ID" required type="email">
+                    <p>Password</p><input name="password" placeholder="New Password" required type="password">
+                    <label for="sex">Select Gender:</label>
+                    <select id="sex" name="sex">
+                      <option value="" disabled selected>Select your gender</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="other">Other</option>
+                    </select>
+                    <label for="birthdate">Select your birth date:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+
+                    <input type="submit" value="Sign Up">
+                </form>
+            </div>
+        
+    </main>
+
+</body>
+</html>
